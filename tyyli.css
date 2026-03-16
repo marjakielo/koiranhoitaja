@@ -1,0 +1,333 @@
+/* kaikille yhteiset tyylit*/
+
+:root {
+  --primary-color:rgb(9, 107, 9);
+  --secondary-color:rgb(243, 233, 186);
+  --text-color: black;
+  --background-color:white}
+
+body {
+  color:var(--text-color);
+  background-color:var(--background-color);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 8px;
+  max-width: 1200px;
+  margin: 0 auto}
+
+h1 {
+  color:var(--primary-color);
+  font-weight: 400;
+  font-family: "Unbounded", sans-serif;
+  font-size : 65px;
+  letter-spacing: 3px;
+  gap: 10px;
+  margin-top: -2px;}
+
+h2 {
+  color:var(--primary-color);
+  font-family: "Unbounded", sans-serif;
+  font-weight: 400;
+  margin-top: 100px;
+font-size: 40px;}
+
+h3 {
+  color:var(--primary-color);
+  font-family: "Unbounded", sans-serif;
+  font-weight: 400;
+  font-size: 30px}
+
+.korostus {
+  color:var(--primary-color);
+  font-family: "Unbounded", sans-serif;
+  margin-top: 1cm ;
+  font-size : 25px;
+  font-weight: 350;
+  letter-spacing: 2px}
+
+footer {
+  margin-top: 2cm;
+  line-height: 0.5;
+  font-size: 14px;}
+
+/*navigointi*/
+
+#navigointi ul{
+  letter-spacing: 2px;
+  background-color: var(--primary-color);
+  margin-top: -20px;
+  font-family: "Unbounded", sans-serif}
+
+ nav li{
+  display:inline-block;
+  margin-right: 30px;}
+
+nav a {
+  color:var(--background-color);
+  text-decoration: none}
+
+/*kuvat*/
+
+.esittelykuva {
+  margin: auto;
+  max-width: 472px;
+  height: auto;}
+
+.koira {
+  max-width: 100%;
+  height:auto;
+  margin:auto}
+
+.bordercollie {
+  height: auto; 
+  max-width: 500px;
+  margin-top: 150px} 
+
+.peltokoira { 
+  height: auto; 
+  margin:auto;
+  max-width: 350px;} 
+               
+.juoksukoira { 
+  width: auto; 
+  height: auto; 
+  max-width:500px;
+  display:block}
+
+/*etusivu*/
+  
+.esittely {
+  background-color: var(--secondary-color);
+  max-width: 500px;
+  border: 4px  var(--secondary-color);
+  padding: 30px;
+  margin: 20px auto;}
+
+.esittelyosio {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;}
+
+.alkuteksti {
+  max-width: 1000px;
+  text-align: center;
+  margin:auto;
+  margin-top: 50px}
+
+/*palvelut*/
+
+#lista {
+  list-style-position: inside;
+  text-align: left;
+  background-color: var(--secondary-color);
+  margin: 60px;
+  padding: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;}
+
+#lista2 {
+  list-style-position: inside;
+  text-align: left;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: -50px}
+  
+#lista2otsikko {
+  text-align: center;}
+
+#tarvikkeet {
+  list-style-position: inside;
+  text-align: left;
+  margin-left:5%;
+  line-height: 1.5;
+  max-width: 700px;
+  margin-top: -15px;}
+
+.palvelut {
+  margin-top: 10px;}
+
+/*hinnasto*/
+
+table {
+  width: 100%; 
+  height: 100%;}
+
+th {
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  border: outset 1px var(--secondary-color);
+  color:var(--primary-color);
+  font-family: "Unbounded", sans-serif ;
+  font-weight: 300}
+
+.hinnasto-container {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px}
+
+td {
+  border: outset 1px var(--secondary-color) ;
+  background-color: beige}
+
+.hinnasto-container img, .hinnasto-container table { 
+  width: auto; 
+ height: auto;}
+
+.aliteksti {
+  font-size: 14px;
+  margin-top: 10px;}
+
+/*yhteystiedot*/
+
+.yhteystiedot-container {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 30px ;
+  text-align: center;}
+              
+/* mobiii */
+
+@media only screen and (max-width:430px)
+
+{header h1 { 
+  font-size: 40px;
+  text-align:center;
+  flex: 1;}
+
+article {
+  flex-direction: column;}
+
+.esittelykuva { 
+  max-width: 300px;
+  width: 100%;
+  height: auto; 
+  margin-top: auto;}
+
+#lista2 {
+  text-align: left;
+  margin: auto;
+  min-width: 280px}
+
+.bordercollie { 
+  max-width:300px;
+  margin: auto;}
+
+.juoksukoira { 
+  width: auto;
+  margin: auto;
+  height: auto;
+  max-width: 400px;}
+
+.palvelut-container {display:flex; 
+   flex-direction: column; 
+   align-items: center;}
+
+ .hinnasto-container { 
+  flex-direction: column-reverse;  
+  align-items: center;  
+  gap: 20px;}
+
+article { 
+  display: flex; 
+  justify-content: center;  
+  align-items: center; 
+  gap: 30px;  flex-wrap: wrap}
+
+.peltokoira {
+  max-width: 300px;}
+
+.aliteksti2 {
+  margin-top: -30px;}
+}
+
+/* keskikokoiset näytöt */
+
+@media only screen and (min-width:431px) and (max-width:1199px)
+{h1 {
+  font-size: 48px;
+ text-align:center}
+
+.esittely {
+  margin: auto;
+  min-width: 280px;}
+
+.esittelykuva { 
+  max-width: 400px;
+  width: 60%;
+  height: auto; 
+  flex-wrap: wrap;
+  flex-direction: column; 
+  align-items: center;}
+
+#lista2 {
+  max-width: 600px;
+  margin-left: auto;}
+
+.palvelut-container {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;}
+  
+.bordercollie {
+  max-width:400px;
+  height:auto ;
+  margin:auto;
+  margin-top: -70px;}
+
+.peltokoira {
+  width: 60%;
+}
+
+.yhteystiedot-container {
+  margin:auto;
+  min-width: 280px;
+  flex-wrap: wrap;
+  flex-direction: column; 
+  align-items: center;}
+
+ .hinnasto-container { 
+  flex-direction: column-reverse;  
+  align-items: center;  
+  gap: 20px;}
+
+ .hinnasto-container img {
+  width: 100%; 
+  max-width: 400px; 
+  height: auto;}
+  
+  .esittelyosio {  
+  align-items: center; 
+  gap: 30px;  
+  flex-wrap: wrap;}
+  }
+
+/*isot näytöt*/
+
+@media only screen and (min-width:1200px)
+
+{header h1 {
+  font-size : 65px;}
+
+.palvelut-container {
+  display: flex; 
+  align-items: flex-start; 
+  gap: 40px;}
+
+.hinnasto-container {
+  align-items: stretch; 
+  flex:1;
+  max-width: 100%;}
+
+.peltokoira {
+  margin-top: 80px;
+}
+}
+
+
